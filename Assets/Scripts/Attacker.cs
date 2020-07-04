@@ -3,16 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Attacker : MonoBehaviour {
-    
-    [SerializeField] [Range(0, 5f)] float walkSpeed = 1.5f;
-    // Start is called before the first frame update
-    void Start() {
 
+    float currentSpeed = 1f;
+
+    void Update() {
+        transform.Translate(Vector2.left * currentSpeed * Time.deltaTime);
     }
 
-    // Update is called once per frame
-    void Update() {
-        // Vector2.anyDirection!
-        transform.Translate(Vector2.left * walkSpeed * Time.deltaTime);
+    public void SetMovementSpeed(float speed) {
+        currentSpeed = speed;
     }
 }
