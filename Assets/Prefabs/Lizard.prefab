@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 3094224113159395355}
   - component: {fileID: 3094224113159395352}
   - component: {fileID: 3094224113159395357}
+  - component: {fileID: -4819766049755018744}
+  - component: {fileID: -7057053260359280464}
+  - component: {fileID: -8664716267398544458}
   m_Layer: 0
   m_Name: Lizard
-  m_TagString: Untagged
+  m_TagString: Attacker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,4 +118,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c98b99bc6bfd543bab7e38e34864c6c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1
+--- !u!114 &-4819766049755018744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3094224113159395353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8047943543864720a54b5ffbad3d735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  deathVfx: {fileID: 1906222994913036, guid: 740c2b3187d56c341b8cb78e8aa925c5, type: 3}
+--- !u!50 &-7057053260359280464
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3094224113159395353}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &-8664716267398544458
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3094224113159395353}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.45175743, y: -0.23776722}
+  m_Size: {x: 0.86940765, y: 0.89318466}
+  m_Direction: 0
