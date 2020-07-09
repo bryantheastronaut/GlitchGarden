@@ -24,9 +24,11 @@ public class StarDisplay : MonoBehaviour {
     }
 
     public void SpendStars(int starsToSpend) {
-        if (currentStars >= starsToSpend) {
-            currentStars -= currentStars;
-            UpdateDisplay();
-        }
+        currentStars -= currentStars;
+        UpdateDisplay();
+    }
+
+    public bool CanSpendStars(int cost) {
+        return cost <= currentStars;
     }
 }

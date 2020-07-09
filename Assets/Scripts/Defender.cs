@@ -17,5 +17,7 @@ public class Defender : MonoBehaviour {
         }
     }
 
+    public int GetStarCost() { return starCost; }
+
 
 }

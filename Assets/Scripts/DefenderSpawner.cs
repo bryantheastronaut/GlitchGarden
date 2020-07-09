@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour {
     Defender currentDefender;
-    private void OnMouseDown() {
-        SpawnDefender(GetSquareClicked());
+    StarDisplay starDisplay;
 
+    private void Start() {
+        starDisplay = FindObjectOfType<StarDisplay>();
+    }
+
+    private void OnMouseDown() {
+        AttemptPlaceDefender(GetSquareClicked());
     }
 
     private Vector2 SnapToGrid(Vector2 rawWorldPos) {
@@ -25,6 +30,14 @@ public class DefenderSpawner : MonoBehaviour {
     private void SpawnDefender(Vector2 spawnPoint) {
         if (currentDefender) {
             Instantiate(currentDefender, spawnPoint, Quaternion.identity);
+        }
+    }
+
+    private void AttemptPlaceDefender(Vector2 gridPos) {
+        var defenderCost = currentDefender.GetStarCost();
+        if (starDisplay.CanSpendStars(defenderCost)) {
+            starDisplay.SpendStars(defenderCost);
+            SpawnDefender(gridPos);
         }
     }
 
