@@ -5,5 +5,17 @@ using UnityEngine;
 public class Defender : MonoBehaviour {
     [SerializeField] int starCost = 100;
 
+    StarDisplay starDisplay;
+
+    private void Start() {
+        starDisplay = FindObjectOfType<StarDisplay>();
+    }
+
+    public void AddStars(int amount) {
+        if (starDisplay) {
+            starDisplay.AddStars(amount);
+        }
+    }
+
 
 }
