@@ -34,10 +34,12 @@ public class DefenderSpawner : MonoBehaviour {
     }
 
     private void AttemptPlaceDefender(Vector2 gridPos) {
-        var defenderCost = currentDefender.GetStarCost();
-        if (starDisplay.CanSpendStars(defenderCost)) {
-            starDisplay.SpendStars(defenderCost);
-            SpawnDefender(gridPos);
+        if (currentDefender) {
+            var defenderCost = currentDefender.GetStarCost();
+            if (starDisplay.CanSpendStars(defenderCost)) {
+                starDisplay.SpendStars(defenderCost);
+                SpawnDefender(gridPos);
+            }
         }
     }
 
