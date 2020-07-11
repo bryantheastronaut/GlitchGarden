@@ -11,7 +11,6 @@ public class Projectile : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        Debug.Log("COLLIDED WITH" + collision.name);
         if (collision.CompareTag("Attacker")) {
             var health = collision.GetComponent<Health>();
             var attacker = collision.GetComponent<Attacker>();
