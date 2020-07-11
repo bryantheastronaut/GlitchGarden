@@ -107,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3589730179893965848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.397, y: -0.018, z: 0}
+  m_LocalPosition: {x: -0.405, y: 0.009, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4411201103600005308}
@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 5326501198447413485}
   - component: {fileID: 1025057194}
   - component: {fileID: 1025057195}
+  - component: {fileID: 126516157}
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Untagged
@@ -141,7 +142,7 @@ Transform:
   m_GameObject: {fileID: 8078602140007900796}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 4411201103600005308}
   m_Father: {fileID: 0}
@@ -191,6 +192,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9b872f9a483f478f86b4d81c932b053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: -2723770099674624235, guid: 9617ad89ae8f34f098c3ef28902ade30,
+  projectilePrefab: {fileID: 2367504033814425595, guid: d61fbcb788a3c4389b99221d2f67d6b5,
     type: 3}
   gun: {fileID: 3589730179893965848}
+--- !u!61 &126516157
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8078602140007900796}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0128445625}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0110097}
+  m_EdgeRadius: 0

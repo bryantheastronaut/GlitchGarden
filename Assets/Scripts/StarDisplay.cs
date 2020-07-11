@@ -24,7 +24,7 @@ public class StarDisplay : MonoBehaviour {
     }
 
     public void SpendStars(int starsToSpend) {
-        currentStars -= currentStars;
+        currentStars -= starsToSpend;
         UpdateDisplay();
     }
 
