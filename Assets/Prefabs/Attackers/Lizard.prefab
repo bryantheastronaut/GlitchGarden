@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2440716761617081197}
   - component: {fileID: 8192547312287457979}
   - component: {fileID: 1258994979602492133}
+  - component: {fileID: 256615224359402811}
   m_Layer: 0
   m_Name: Lizard
   m_TagString: Attacker
@@ -109,6 +110,27 @@ CapsuleCollider2D:
   m_Offset: {x: -0.56077635, y: 0.02}
   m_Size: {x: 0.6384473, y: 0.93846774}
   m_Direction: 0
+--- !u!50 &256615224359402811
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3753014100810185457}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4191070699598216443
 GameObject:
   m_ObjectHideFlags: 0

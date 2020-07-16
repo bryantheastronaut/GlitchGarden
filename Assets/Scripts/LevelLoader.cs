@@ -26,8 +26,7 @@ public class LevelLoader : MonoBehaviour {
         SceneManager.LoadScene(currentSceneIdx);
     }
 
-    // Update is called once per frame
-    void Update() {
-
+    public void LoadLoseScene() {
+        SceneManager.LoadScene("GameOverScreen");
     }
 }
